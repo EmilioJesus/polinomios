@@ -51,8 +51,12 @@ public class polinomios
         valor=a*c;
         discriminante=hola-4*valor;
         System.out.println("el valor del discrimante es: "+discriminante);
-        
-        if (a==1) 
+        if (b==0) 
+        {
+            System.out.println("quinto caso");
+            caso5();
+            
+        }else if (a==1) 
         {
             System.out.println("cuarto caso");
             caso4();
@@ -138,6 +142,14 @@ public class polinomios
     
     public void caso5()
     {
+        double operacion,operacion1,operacion2,operacion3;
+        operacion=c/a*-1;
+        operacion1=(double) Math.sqrt(operacion);
+        operacion2=-operacion1;
+        operacion3=+operacion1;
+        System.out.println("primera raiz "+operacion2);
+        System.out.println("segunda raiz "+operacion3);
+        
         
     }
     
